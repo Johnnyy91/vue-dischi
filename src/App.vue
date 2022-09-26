@@ -27,7 +27,6 @@ export default {
     axios 
       .get('https://flynn.boolean.careers/exercises/api/array/music')
       .then((response)=>{
-        console.log(response)
         this.cdCard = response.data.response
         this.loading = false
       })
